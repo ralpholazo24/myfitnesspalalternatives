@@ -1,21 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #181A20;
+  --foreground: #F4F4F4;
+  --card-background: #23262F;
+  --border-color: #2C2F36;
+  --accent: #3ED598;
+  --accent-secondary: #2D9CDB;
+  --link-color: #2D9CDB;
+  --faq-background: #23262F;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card-background: var(--card-background);
+  --color-border: var(--border-color);
+  --color-accent: var(--accent);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-link: var(--link-color);
+  --color-faq-background: var(--faq-background);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #181A20;
+    --foreground: #F4F4F4;
+    --card-background: #23262F;
+    --border-color: #2C2F36;
+    --accent: #3ED598;
+    --accent-secondary: #2D9CDB;
+    --link-color: #2D9CDB;
+    --faq-background: #23262F;
   }
 }
 
@@ -23,4 +42,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
 }
