@@ -20,7 +20,7 @@ export default function Newsletter() {
   return (
     <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[var(--background)] text-[var(--foreground)]">
       <div className="max-w-2xl w-full text-center">
-        <h2 className="text-2xl md:text-3xl font-mono font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-mono font-bold mb-4">
           Get Notified About New MyFitnessPal Alternatives
         </h2>
         <p className="text-base md:text-lg mb-8">
