@@ -17,13 +17,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-[var(--background)] py-16 md:py-24">
-      <div className="w-full px-6 sm:px-8 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20 mb-12 md:mb-16 pt-12 md:pt-16 border-t border-[var(--border-color)]">
+    <footer className="w-full bg-[var(--background)] py-8 md:py-16">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mb-8 md:mb-12 pt-8 md:pt-12 border-t border-[var(--border-color)]">
           {/* Latest Blogs Section */}
-          <div className="space-y-6 md:space-y-8">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">Latest Blogs</h3>
-            <ul className="space-y-4 md:space-y-5">
+            <ul className="space-y-3 md:space-y-4">
               {latestBlogs.map((blog) => (
                 <li key={blog.url}>
                   <Link 
@@ -40,9 +40,9 @@ const Footer = () => {
           </div>
 
           {/* Tools Section */}
-          <div className="space-y-6 md:space-y-8">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">Tools</h3>
-            <ul className="space-y-4 md:space-y-5">
+            <ul className="space-y-3 md:space-y-4">
               {tools.map((tool) => (
                 <li key={tool.url}>
                   <Link 
@@ -59,16 +59,16 @@ const Footer = () => {
           </div>
 
           {/* Social Links Section */}
-          <div className="space-y-6 md:space-y-8">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">Connect</h3>
-            <ul className="flex flex-wrap gap-6 md:gap-8">
+            <ul className="flex flex-wrap gap-4 md:gap-6">
               {socials.map((social) => (
                 <li key={social.url}>
                   <Link 
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[var(--foreground)] opacity-80 hover:text-[var(--accent)] transition-colors flex items-center gap-2 p-3 rounded-full hover:bg-[var(--card-background)]"
+                    className="text-[var(--foreground)] opacity-80 hover:text-[var(--accent)] transition-colors flex items-center gap-2 p-2 md:p-3 rounded-full hover:bg-[var(--card-background)]"
                     aria-label={social.name}
                   >
                     {getSocialIcon(social.icon)}
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="flex flex-col items-center justify-center space-y-6 pt-12 md:pt-16 border-t border-[var(--border-color)]">
+        <div className="flex flex-col items-center justify-center space-y-4 pt-8 md:pt-12 border-t border-[var(--border-color)]">
           <p className="text-sm md:text-base text-[var(--foreground)] opacity-80 text-center">
             Made with ❤️ by{' '}
             <Link 

@@ -7,7 +7,7 @@ import Newsletter from "./components/Newsletter";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-[var(--background)]">
+    <main className="flex flex-col bg-[var(--background)]">
       <Hero />
       <div className="flex-1 w-full">
         <Data />      

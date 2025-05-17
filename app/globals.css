@@ -2,14 +2,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #181A20;
-  --foreground: #F4F4F4;
-  --card-background: #23262F;
-  --border-color: #2C2F36;
-  --accent: #3ED598;
-  --accent-secondary: #2D9CDB;
-  --link-color: #2D9CDB;
-  --faq-background: #23262F;
+  /* Dark theme (default) */
+  --dark-background: #181A20;
+  --dark-foreground: #F4F4F4;
+  --dark-card-background: #23262F;
+  --dark-border-color: #2C2F36;
+  --dark-accent: #3ED598;
+  --dark-accent-secondary: #2D9CDB;
+  --dark-link-color: #2D9CDB;
+  --dark-faq-background: #23262F;
+
+  /* MyFitnessPal theme */
+  --mfp-background: #F8FAFC;
+  --mfp-foreground: #1E293B;
+  --mfp-card-background: #FFFFFF;
+  --mfp-border-color: #E2E8F0;
+  --mfp-accent: #0EA5E9;
+  --mfp-accent-secondary: #6366F1;
+  --mfp-link-color: #0EA5E9;
+  --mfp-faq-background: #FFFFFF;
+}
+
+/* Default theme (dark) */
+:root {
+  --background: var(--dark-background);
+  --foreground: var(--dark-foreground);
+  --card-background: var(--dark-card-background);
+  --border-color: var(--dark-border-color);
+  --accent: var(--dark-accent);
+  --accent-secondary: var(--dark-accent-secondary);
+  --link-color: var(--dark-link-color);
+  --faq-background: var(--dark-faq-background);
+}
+
+/* MyFitnessPal theme */
+:root[data-theme="myfitnesspal"] {
+  --background: var(--mfp-background);
+  --foreground: var(--mfp-foreground);
+  --card-background: var(--mfp-card-background);
+  --border-color: var(--mfp-border-color);
+  --accent: var(--mfp-accent);
+  --accent-secondary: var(--mfp-accent-secondary);
+  --link-color: var(--mfp-link-color);
+  --faq-background: var(--mfp-faq-background);
 }
 
 @theme inline {
@@ -25,23 +60,11 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #181A20;
-    --foreground: #F4F4F4;
-    --card-background: #23262F;
-    --border-color: #2C2F36;
-    --accent: #3ED598;
-    --accent-secondary: #2D9CDB;
-    --link-color: #2D9CDB;
-    --faq-background: #23262F;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-mono);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code, pre {
