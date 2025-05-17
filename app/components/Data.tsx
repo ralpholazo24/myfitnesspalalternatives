@@ -38,7 +38,7 @@ export default function Data() {
                 <span className="text-2xl" aria-hidden>{item.icon}</span>
                 <span className="font-bold text-lg">{item.name}</span>
               </div>
-              <p className="text-base text-[var(--foreground)] whitespace-pre-line">
+              <p className="text-sm text-[var(--foreground)] whitespace-pre-line">
                 {item.description}
               </p>
             </div>

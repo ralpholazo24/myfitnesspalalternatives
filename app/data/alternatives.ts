@@ -10,7 +10,13 @@ export const alternatives: Alternative[] = [
     name: "Lose It!",
     description: "A user-friendly calorie counting app with barcode scanning, meal planning, and community support. Features include macro tracking, meal photos, and integration with fitness devices.",
     website: "https://www.loseit.com/",
-    icon: "🍏",
+    icon: "🥦",
+  },
+  {
+    name: "Cal AI",
+    description: "An AI-powered app that simplifies calorie tracking. Snap a photo or scan a barcode, and Cal AI instantly calculates calories and nutrients. Stay on track with personalized insights and smart reminders to reach your fitness goals faster.",
+    website: "https://www.calai.app/",
+    icon: "🍏"
   },
   {
     name: "Cronometer",
@@ -89,5 +95,35 @@ export const alternatives: Alternative[] = [
     description: "Comprehensive health platform with food tracking, exercise monitoring, and sleep analysis. Includes integration with Samsung devices.",
     website: "https://www.samsung.com/global/galaxy/apps/samsung-health/",
     icon: "📱",
+  },
+  {
+    name: "DoFasting",
+    description: "At its core, DoFasting is a comprehensive platform aimed at individuals seeking to reap the benefits of intermittent fasting.",
+    website: "https://dofasting.com/gb/",
+    icon: "🥣",
+  },
+  {
+    name: "Klinio",
+    description: "The Klinio diet is an app-based program designed for weight loss and diabetes management that provides a meal plan, a grocery shopping list, beginner workouts, and progress tracking to help you meet your goals.",
+    website: "https://klinio.com/",
+    icon: "⚖️",
+  },
+  {
+    name: "Calory",
+    description: "Calory is a calorie-tracking app Ilya Birman Design & Type developed that tracks how much you eat and how many calories you burn. Users enter their weight, height, exercise level, and desired weight loss, maintenance, or gain, and the app returns a daily calorie goal.",
+    website: "https://calory.app/",
+    icon: "🍟",
+  },
+  {
+    name: "SparkPeople",
+    description: "SparkPeople is a free MyFitnessPal alternative with a database of over 3.5 million food items and a barcode reader for easy tracking. The app supports various diet plans, including paleo, vegan, and keto, offering multiple recipes tailored to your nutritional needs.",
+    website: "https://www.sparkpeople.com/",
+    icon: "✨"
+  },
+  {
+    name: "Waistline",
+    description: "Waistline is a calorie counter and weight tracker that allows you to keep a diary of the food you eat and track variations in your weight.",
+    website: "https://apps.apple.com/us/app/waistline/id1445089233",
+    icon: "🏋🏻"
   }
 ]; 
