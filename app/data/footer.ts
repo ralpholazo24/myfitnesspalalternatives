@@ -36,19 +36,9 @@ export const latestBlogs: BlogPost[] = [
 
 export const tools: Tool[] = [
   {
-    name: "Calorie Calculator",
-    description: "Calculate your daily calorie needs",
-    url: "/tools/calorie-calculator"
-  },
-  {
-    name: "BMI Calculator",
-    description: "Check your Body Mass Index",
-    url: "/tools/bmi-calculator"
-  },
-  {
-    name: "Macro Calculator",
-    description: "Calculate your macronutrient needs",
-    url: "/tools/macro-calculator"
+    name: "TDEE Calculator",
+    description: "Calculate your total daily energy expenditure",
+    url: "https://calculatetdee.net/"
   }
 ];
 
@@ -56,16 +46,16 @@ export const socials: Social[] = [
   {
     name: "Twitter",
     url: "https://twitter.com/ralpholazo",
-    icon: "𝕏"
+    icon: "twitter"
   },
   {
     name: "GitHub",
     url: "https://github.com/ralpholazo24",
-    icon: "🐙"
+    icon: "github"
   },
   {
     name: "LinkedIn",
     url: "https://linkedin.com/in/ralpholazo",
-    icon: "💼"
+    icon: "linkedin"
   }
 ]; 
