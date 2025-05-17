@@ -4,17 +4,36 @@ import React, { useState } from "react";
 export default function Newsletter() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
+    setMessage("");
     
-    // TODO: Implement newsletter subscription logic
-    // For now, we'll just simulate a successful subscription
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong');
+      }
+
       setStatus('success');
+      setMessage("Thanks for subscribing! We'll keep you updated.");
       setEmail("");
-    }, 1000);
+    } catch (error) {
+      setStatus('error');
+      setMessage(error instanceof Error ? error.message : 'Failed to subscribe. Please try again.');
+      console.error('Newsletter subscription error:', error);
+    }
   };
 
   return (
@@ -48,11 +67,10 @@ export default function Newsletter() {
             </button>
           </form>
           
-          {status === 'success' && (
-            <p className="text-green-600">Thanks for subscribing! We'll keep you updated.</p>
-          )}
-          {status === 'error' && (
-            <p className="text-red-600">Something went wrong. Please try again.</p>
+          {message && (
+            <p className={`text-sm ${status === 'success' ? 'text-green-600' : 'text-red-600'}`}>
+              {message}
+            </p>
           )}
         </div>
       </div>
