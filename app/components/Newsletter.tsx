@@ -18,39 +18,43 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[var(--background)] text-[var(--foreground)]">
-      <div className="max-w-2xl w-full text-center">
-        <h2 className="text-3xl md:text-4xl font-mono font-bold mb-4">
-          Get Notified About New MyFitnessPal Alternatives
-        </h2>
-        <p className="text-base md:text-lg mb-8">
-          Subscribe to our simple newsletter for updates on fresh MyFitnessPal competitors. No spam, just new.
-        </p>
-        
-        <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
-            required
-            className="flex-1 px-4 py-2 rounded-md border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
-          />
-          <button
-            type="submit"
-            disabled={status === 'loading'}
-            className="px-6 py-2 bg-[var(--accent)] text-white rounded-md hover:bg-[var(--accent-secondary)] transition-colors disabled:opacity-50"
-          >
-            {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
-          </button>
-        </form>
-        
-        {status === 'success' && (
-          <p className="mt-4 text-green-600">Thanks for subscribing! We'll keep you updated.</p>
-        )}
-        {status === 'error' && (
-          <p className="mt-4 text-red-600">Something went wrong. Please try again.</p>
-        )}
+    <section className="w-full bg-[var(--background)] text-[var(--foreground)] py-16 md:py-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-2xl mx-auto text-center space-y-8">
+          <div className="space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Get Notified About New MyFitnessPal Alternatives
+            </h2>
+            <p className="text-lg">
+              Subscribe to our simple newsletter for updates on fresh MyFitnessPal competitors. No spam, just new.
+            </p>
+          </div>
+          
+          <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+              className="flex-1 px-4 py-3 rounded-md border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+            />
+            <button
+              type="submit"
+              disabled={status === 'loading'}
+              className="px-6 py-3 bg-[var(--accent)] text-white rounded-md hover:bg-[var(--accent-secondary)] transition-colors disabled:opacity-50"
+            >
+              {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
+            </button>
+          </form>
+          
+          {status === 'success' && (
+            <p className="text-green-600">Thanks for subscribing! We'll keep you updated.</p>
+          )}
+          {status === 'error' && (
+            <p className="text-red-600">Something went wrong. Please try again.</p>
+          )}
+        </div>
       </div>
     </section>
   );

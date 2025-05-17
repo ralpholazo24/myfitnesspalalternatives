@@ -12,37 +12,41 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center py-12 md:py-24 px-4 mt-8 md:mt-16">
-      <h1 className="text-3xl md:text-6xl font-mono font-bold text-[var(--foreground)] mb-2">FAQs</h1>
-      <p className="text-base md:text-xl text-[var(--foreground)] opacity-80 mb-6 md:mb-10">Your questions, answered.</p>
-      <div className="w-full space-y-3 md:space-y-4">
-        {faqs.map((faq, idx) => (
-          <div
-            key={faq.question}
-            className="border border-[var(--border-color)] rounded-lg bg-[var(--card-background)] overflow-hidden transition-all hover:border-[var(--accent-secondary)]"
-          >
-            <button
-              className="w-full flex justify-between items-center px-4 md:px-6 py-4 md:py-5 text-left text-base md:text-lg font-mono text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-secondary)]"
-              aria-expanded={openIndex === idx}
-              aria-controls={`faq-panel-${idx}`}
-              onClick={() => handleToggle(idx)}
+    <section className="w-full max-w-6xl mx-auto px-4 py-16 md:py-24">
+      <div className="space-y-12">
+        <div className="text-center space-y-4">
+          <h1 className="text-3xl md:text-6xl font-bold text-[var(--foreground)]">FAQs</h1>
+          <p className="text-lg md:text-xl text-[var(--foreground)] opacity-80">Your questions, answered.</p>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq, idx) => (
+            <div
+              key={faq.question}
+              className="border border-[var(--border-color)] rounded-lg bg-[var(--card-background)] overflow-hidden transition-all hover:border-[var(--accent-secondary)]"
             >
-              <span className="pr-4">{faq.question}</span>
-              <ChevronDownIcon
-                className={`h-5 w-5 md:h-6 md:w-6 text-[var(--accent)] transition-transform duration-200 flex-shrink-0 ${openIndex === idx ? 'rotate-180' : ''}`}
-                aria-hidden="true"
-              />
-            </button>
-            {openIndex === idx && (
-              <div
-                id={`faq-panel-${idx}`}
-                className="p-4 md:p-5 text-[var(--foreground)] opacity-80 text-sm md:text-base animate-fadeIn"
+              <button
+                className="w-full flex justify-between items-center px-6 py-5 text-left text-lg text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-secondary)]"
+                aria-expanded={openIndex === idx}
+                aria-controls={`faq-panel-${idx}`}
+                onClick={() => handleToggle(idx)}
               >
-                {faq.answer}
-              </div>
-            )}
-          </div>
-        ))}
+                <span className="pr-4">{faq.question}</span>
+                <ChevronDownIcon
+                  className={`h-6 w-6 text-[var(--accent)] transition-transform duration-200 flex-shrink-0 ${openIndex === idx ? 'rotate-180' : ''}`}
+                  aria-hidden="true"
+                />
+              </button>
+              {openIndex === idx && (
+                <div
+                  id={`faq-panel-${idx}`}
+                  className="px-6 py-5 text-[var(--foreground)] opacity-80 text-base animate-fadeIn"
+                >
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
       <style jsx>{`
         @keyframes fadeIn {
