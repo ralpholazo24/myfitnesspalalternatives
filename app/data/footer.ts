@@ -21,16 +21,6 @@ export const latestBlogs: BlogPost[] = [
     title: "10 Best MyFitnessPal Alternatives for 2024",
     url: "/blog/best-myfitnesspal-alternatives-2024",
     date: "2024-03-15"
-  },
-  {
-    title: "How to Choose the Right Fitness Tracking App",
-    url: "/blog/choosing-fitness-tracking-app",
-    date: "2024-03-10"
-  },
-  {
-    title: "The Future of Health and Fitness Apps",
-    url: "/blog/future-of-fitness-apps",
-    date: "2024-03-05"
   }
 ];
 
