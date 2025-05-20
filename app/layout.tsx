@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Myfitnesspal Alternatives",
-  description: "The Complete MyFitnessPal Alternatives List",
+  title: "The Complete MyFitnessPal Alternatives List",
+  description: "Explore the best competitors to MyFitnessPal for your health and fitness tracking. Compare features, pricing, and find the perfect solution for your wellness journey.",
 };
 
 export default function RootLayout({

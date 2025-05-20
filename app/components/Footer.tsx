@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { latestBlogs, tools, socials } from '../data/footer';
+import { latestBlogs, tools, socials, directories } from '../data/footer';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[var(--background)] py-8 md:py-16">
       <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mb-8 md:mb-12 pt-8 md:pt-12 border-t border-[var(--border-color)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16 mb-8 md:mb-12 pt-8 md:pt-12 border-t border-[var(--border-color)]">
           {/* Latest Blogs Section */}
           <div className="space-y-4 md:space-y-6">
             <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">Latest Blogs</h3>
@@ -52,6 +52,24 @@ const Footer = () => {
                   >
                     <span className="block text-sm md:text-base">{tool.name}</span>
                     <span className="text-xs md:text-sm opacity-60">{tool.description}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Directories Section */}
+          <div className="space-y-4 md:space-y-6">
+            <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">Directories</h3>
+            <ul className="space-y-3 md:space-y-4">
+              {directories.map((directory) => (
+                <li key={directory.url}>
+                  <Link 
+                    href={directory.url}
+                    className="text-[var(--foreground)] opacity-80 hover:text-[var(--accent)] transition-colors block"
+                  >
+                    <span className="block text-sm md:text-base">{directory.name}</span>
+                    <span className="text-xs md:text-sm opacity-60">{directory.description}</span>
                   </Link>
                 </li>
               ))}

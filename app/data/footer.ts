@@ -16,6 +16,12 @@ export interface Social {
   icon: string;
 }
 
+export interface Directory {
+  name: string;
+  description: string;
+  url: string;
+}
+
 export const latestBlogs: BlogPost[] = [
   {
     title: "10 Best MyFitnessPal Alternatives for 2024",
@@ -27,7 +33,7 @@ export const latestBlogs: BlogPost[] = [
 export const tools: Tool[] = [
   {
     name: "TDEE Calculator",
-    description: "Calculate your total daily energy expenditure",
+    description: "",
     url: "https://calculatetdee.net/"
   }
 ];
@@ -47,5 +53,18 @@ export const socials: Social[] = [
     name: "LinkedIn",
     url: "https://linkedin.com/in/ralpholazo",
     icon: "linkedin"
+  }
+];
+
+export const directories: Directory[] = [
+  {
+    name: "Strava Alternatives",
+    description: "",
+    url: "https://stravaalternatives.com"
+  },
+  {
+    name: "Calorie Deficit Recipes",
+    description: "",
+    url: "https://caloriedeficitrecipes.com"
   }
 ]; 

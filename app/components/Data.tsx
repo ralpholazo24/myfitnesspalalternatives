@@ -14,7 +14,7 @@ export default function Data() {
   return (
     <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-24">
       <div className="space-y-8 md:space-y-12">
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-4">
           <input
             type="text"
             placeholder="Search alternatives..."
@@ -24,11 +24,16 @@ export default function Data() {
             aria-label="Search alternatives"
           />
         </div>
+        <div className="flex justify-center">
+          <p className="text-sm text-[var(--foreground)]">
+            {filteredAlternatives.length} alternatives found :)
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           {filteredAlternatives.map((item) => (
             <div
               key={item.name}
-              onClick={() => window.open(item.website, "_blank")}
+              onClick={() => window.open(item.website+ "?ref=myfitnesspalalternatives", "_blank")}
               className="cursor-pointer border border-[var(--border-color)] bg-[var(--card-background)] rounded-lg p-4 md:p-6 transition-shadow hover:shadow-lg hover:border-[var(--accent-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-secondary)]"
               tabIndex={0}
               role="button"
