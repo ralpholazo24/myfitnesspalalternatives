@@ -31,8 +31,8 @@ const Footer = () => {
                     target='_blank'
                     className="text-[var(--foreground)] opacity-80 hover:text-[var(--accent)] transition-colors block"
                   >
-                    <span className="block text-sm md:text-base">{blog.title}</span>
-                    <span className="text-xs md:text-sm opacity-60">{new Date(blog.date).toLocaleDateString()}</span>
+                    <span className="block text-sm">{blog.title}</span>
+                    <span className="text-xs md:text-sm opacity-60 hidden">{new Date(blog.date).toLocaleDateString()}</span>
                   </Link>
                 </li>
               ))}
@@ -50,7 +50,7 @@ const Footer = () => {
                     target='_blank'
                     className="text-[var(--foreground)] opacity-80 hover:text-[var(--accent)] transition-colors block"
                   >
-                    <span className="block text-sm md:text-base">{tool.name}</span>
+                    <span className="block text-sm">{tool.name}</span>
                     <span className="text-xs md:text-sm opacity-60">{tool.description}</span>
                   </Link>
                 </li>
@@ -68,7 +68,7 @@ const Footer = () => {
                     href={directory.url}
                     className="text-[var(--foreground)] opacity-80 hover:text-[var(--accent)] transition-colors block"
                   >
-                    <span className="block text-sm md:text-base">{directory.name}</span>
+                    <span className="block text-sm">{directory.name}</span>
                     <span className="text-xs md:text-sm opacity-60">{directory.description}</span>
                   </Link>
                 </li>
