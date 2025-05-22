@@ -125,5 +125,83 @@ export const alternatives: Alternative[] = [
     description: "Waistline is a calorie counter and weight tracker that allows you to keep a diary of the food you eat and track variations in your weight.",
     website: "https://apps.apple.com/us/app/waistline/id1445089233",
     icon: "🏋🏻"
-  }
+  },
+  {
+    name: "Nutritionix Track",
+    description: "Leverages an extensive and verified database of foods, including restaurant items and common groceries. Known for its accuracy and detailed nutritional information. Developed by a team of dietitians.",
+    website: "https://www.nutritionix.com/app",
+    icon: "🍎"
+  },
+  {
+    name: "Eat This Much",
+    description: "An automatic meal planner that creates personalized meal plans based on your calorie goals, macro targets, food preferences, and budget. Helps take the guesswork out of what to eat.",
+    website: "https://www.eatthismuch.com",
+    icon: "🥣"
+  },
+  {
+    name: "RP Diet Coach",
+    description: "Developed by Renaissance Periodization, this app provides structured diet plans and coaching based on your fitness goals, whether for muscle gain, fat loss, or maintenance. More focused on performance-oriented nutrition.",
+    website: "https://rpstrength.com/rp-diet-app/",
+    icon: "🖊️"
+  },
+  {
+    name: "PlateJoy",
+    description: "Offers personalized meal plans and recipes tailored to specific dietary needs, preferences, and health goals, including options for families. Also helps with creating shopping lists and reducing food waste.",
+    website: "https://www.platejoy.com",
+    icon: "🍽️"
+  },
+  {
+    name: "SeeHowYouEat Food Diary",
+    description: "A visual food journal that encourages mindful eating by having users take photos of their meals rather than meticulously counting calories. Focuses on improving eating habits by observing patterns.",
+    website: "https://www.seehowyoueat.com",
+    icon: "👀"
+  },
+  {
+    name: "MyMacros+",
+    description: "A highly-rated macro tracking app favored by bodybuilders and serious fitness enthusiasts. Offers precise tracking, a large food database, body fat estimation, and features for tracking water and supplements.",
+    website: "https://www.getmymacros.com",
+    icon: "➕"
+  },
+  {
+    name:"Prospre",
+    description: "Prospre generates meal plans that are sure to hit your macros. Our meal plans are new and fresh every time, and we only include foods that you like. Regenerate a day, swap out a meal, or fit in a treat.",
+    website: "https://www.prospre.io",
+    icon: "🌯"
+  },
+  {
+    name: "MacroFactor",
+    description: "A science-backed macro tracker that dynamically adjusts your calorie and macro targets based on your metabolism and progress. Known for its accuracy and data-driven insights without food shaming.",
+    website: "https://macrofactorapp.com",
+    icon: "🔍"
+  },
+  {
+    name: "Ate Food Diary",
+    description: "Focuses on mindful eating rather than strict calorie counting. Encourages users to reflect on how meals make them feel, using photo-based logging to build healthier eating habits.",
+    website: "https://www.youate.com",
+    icon: "🍔"
+  },
+  {
+    name: "WW (Weight Watchers)",
+    description: "A well-established program that uses a science-backed points system (PersonalPoints™) instead of strict calorie counting to guide food choices. Strong emphasis on community and support.",
+    website: "https://www.weightwatchers.com",
+    icon: "🏋️"
+  },
+  {
+    name: "SnapCalorie",
+    description: "AI-powered calorie and macro counter that allows users to log meals by simply taking a photo. Aims to make food tracking fast and effortless with its food recognition technology.",
+    website: "https://www.snapcalorie.com",
+    icon: "📷"
+  },
+  {
+    name: "Open Food Facts",
+    description: "A collaborative, free, and open database of food products from around the world. Focuses on food transparency, allowing users to understand ingredients, allergens, nutrition facts, and environmental impact.",
+    website: "https://world.openfoodfacts.org",
+    icon: "🥘"
+  },
+  {
+    name: "HealthifyMe",
+    description: "A comprehensive health and fitness app popular for its extensive database of Indian and international foods, AI nutritionist (Ria), and integration with wearable devices. Offers diet and workout plans.",
+    website: "https://www.healthifyme.com",
+    icon: "🥗"
+  },
 ]; 
