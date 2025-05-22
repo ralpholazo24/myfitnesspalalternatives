@@ -20,7 +20,7 @@ export default function Data() {
             placeholder="Search alternatives..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full max-w-[300px] sm:max-w-md px-4 py-2 md:py-3 rounded-md border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+            className="w-full sm:max-w-[300px] md:max-w-md px-4 py-2 md:py-3 rounded-md border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
             aria-label="Search alternatives"
           />
         </div>

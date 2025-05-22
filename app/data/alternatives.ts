@@ -204,4 +204,10 @@ export const alternatives: Alternative[] = [
     website: "https://www.healthifyme.com",
     icon: "🥗"
   },
+  {
+    name: "Fig: Food Scanner & Discovery",
+    description: "Excellent for users with complex dietary restrictions like Low FODMAP, gluten-free, multiple allergies, or other specific ingredient avoidance needs. Scans product barcodes and checks ingredients against your profile.",
+    website: "https://foodisgood.com",
+    icon: "🔍"
+  }
 ]; 

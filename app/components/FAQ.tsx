@@ -15,8 +15,8 @@ const FAQ: React.FC = () => {
     <section className="w-full max-w-6xl mx-auto px-4 py-16 md:py-24">
       <div className="space-y-12">
         <div className="text-center space-y-4">
-          <h1 className="text-3xl md:text-6xl font-bold text-[var(--foreground)]">FAQs</h1>
-          <p className="text-lg md:text-xl text-[var(--foreground)] opacity-80">Your questions, answered.</p>
+          <h1 className="text-2xl md:text-4xl font-bold text-[var(--foreground)]">FAQs</h1>
+          <p className="text-base md:text-lg text-[var(--foreground)] opacity-80">Your questions, answered.</p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
@@ -25,21 +25,21 @@ const FAQ: React.FC = () => {
               className="border border-[var(--border-color)] rounded-lg bg-[var(--card-background)] overflow-hidden transition-all hover:border-[var(--accent-secondary)]"
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-5 text-left text-lg text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-secondary)]"
+                className="w-full flex justify-between items-center px-4 sm:px-6 py-4 sm:py-5 text-left text-base md:text-lg text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-secondary)]"
                 aria-expanded={openIndex === idx}
                 aria-controls={`faq-panel-${idx}`}
                 onClick={() => handleToggle(idx)}
               >
                 <span className="pr-4">{faq.question}</span>
                 <ChevronDownIcon
-                  className={`h-6 w-6 text-[var(--accent)] transition-transform duration-200 flex-shrink-0 ${openIndex === idx ? 'rotate-180' : ''}`}
+                  className={`h-5 w-5 sm:h-6 sm:w-6 text-[var(--accent)] transition-transform duration-200 flex-shrink-0 ${openIndex === idx ? 'rotate-180' : ''}`}
                   aria-hidden="true"
                 />
               </button>
               {openIndex === idx && (
                 <div
                   id={`faq-panel-${idx}`}
-                  className="px-6 py-5 text-[var(--foreground)] opacity-80 text-base animate-fadeIn"
+                  className="px-4 sm:px-6 py-4 sm:py-5 text-[var(--foreground)] opacity-80 text-sm md:text-base animate-fadeIn"
                 >
                   {faq.answer}
                 </div>
