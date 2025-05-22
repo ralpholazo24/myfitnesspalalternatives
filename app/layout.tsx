@@ -38,10 +38,7 @@ export const metadata: Metadata = {
     title: "The Complete MyFitnessPal Alternatives List",
     description: "Explore the best competitors to MyFitnessPal for your health and fitness tracking. Compare features, pricing, and find the perfect solution for your wellness journey.",
     images: ["/og-image.jpg"]
-  },
-  verification: {
-    google: "jQhht4SPu7fNakGv-y2Oc0hdWaL4bN5YAdCESXFbhSE",
-  },
+  }
 };
 
 export default function RootLayout({
