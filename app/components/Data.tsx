@@ -33,7 +33,7 @@ export default function Data() {
           {filteredAlternatives.map((item) => (
             <div
               key={item.name}
-              onClick={() => window.open(item.website+ "?ref=myfitnesspalalternatives", "_blank")}
+              onClick={() => window.open(item.website+ "?ref=myfitnesspalalternatives.app", "_blank")}
               className="cursor-pointer border border-[var(--border-color)] bg-[var(--card-background)] rounded-lg p-4 md:p-6 transition-shadow hover:shadow-lg hover:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
               tabIndex={0}
               role="button"
