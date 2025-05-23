@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import { CookieConsent } from "./components/cookie-consent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,7 +66,9 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-9MZE0BC8JD');
+            gtag('config', 'G-9MZE0BC8JD', {
+              'cookie_flags': 'SameSite=None;Secure'
+            });
           `}
         </Script>
         <Analytics />
@@ -74,6 +77,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <CookieConsent />
         </ThemeProvider>
       </body>
     </html>
