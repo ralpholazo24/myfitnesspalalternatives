@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://myfitnesspalalternatives.com'
+  const baseUrl = 'https://myfitnesspalalternatives.app'
   
   // Add your static routes
   const routes = [
