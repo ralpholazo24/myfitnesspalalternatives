@@ -168,6 +168,13 @@ export const alternatives: Alternative[] = [
     website: "https://www.prospre.io",
     icon: "🌯"
   },
+
+  {
+    name: "FitGenie",
+    description: "Custom macro plans paired with macro-focused meals. Hand-crafted by the best chefs in your community.",
+    website: "https://www.fitgenieapp.com/",
+    icon: "🧞"
+  },
   {
     name: "MacroFactor",
     description: "A science-backed macro tracker that dynamically adjusts your calorie and macro targets based on your metabolism and progress. Known for its accuracy and data-driven insights without food shaming.",
