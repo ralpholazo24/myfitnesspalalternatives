@@ -25,6 +25,12 @@ export const alternatives: Alternative[] = [
     icon: "📊",
   },
   {
+    name: "Nutrix AI",
+    description: "Nutrix AI is a digital health platform that leverages artificial intelligence to promote sustainable nutritional habits and prevent chronic diseases.",
+    website: "https://www.nutrix.ai/",
+    icon: "🥦"
+  },
+  {
     name: "Yazio",
     description: "Personalized meal plans, fasting trackers, and a large food database for healthy living. Features include AI-powered meal suggestions and progress tracking.",
     website: "https://www.yazio.com/",
@@ -168,7 +174,6 @@ export const alternatives: Alternative[] = [
     website: "https://www.prospre.io",
     icon: "🌯"
   },
-
   {
     name: "FitGenie",
     description: "Custom macro plans paired with macro-focused meals. Hand-crafted by the best chefs in your community.",
