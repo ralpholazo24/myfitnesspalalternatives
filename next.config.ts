@@ -19,6 +19,17 @@ const nextConfig: NextConfig = {
         permanent: true,
         destination: 'https://myfitnesspalalternatives.app/:path*',
       },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.myfitnesspalalternatives.app',
+          },
+        ],
+        permanent: true,
+        destination: 'https://myfitnesspalalternatives.app/:path*',
+      },
     ]
   },
 
