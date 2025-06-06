@@ -15,20 +15,9 @@ const nextConfig: NextConfig = {
             value: 'www.myfitnesspalalternatives.app',
           },
         ],
-        permanent: true,
         destination: 'https://myfitnesspalalternatives.app/:path*',
-      },
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'x-forwarded-proto',
-            value: 'http',
-          },
-        ],
         permanent: true,
-        destination: 'https://myfitnesspalalternatives.app/:path*',
+        basePath: false
       }
     ]
   },
