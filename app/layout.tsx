@@ -18,36 +18,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Complete MyFitnessPal Alternatives List",
-  description: "Explore the best competitors to MyFitnessPal for your health and fitness tracking. Compare features, pricing, and find the perfect solution for your wellness journey.",
+  title: "Best MyFitnessPal Alternatives – Compare Top Fitness & Nutrition Apps",
+  description: "Discover the best MyFitnessPal alternatives for tracking nutrition, fitness, and health. Compare features, pricing, and find the perfect app for your wellness journey.",
   openGraph: {
-    title: "The Complete MyFitnessPal Alternatives List",
-    description: "Explore the best competitors to MyFitnessPal for your health and fitness tracking. Compare features, pricing, and find the perfect solution for your wellness journey.",
+    title: "Best MyFitnessPal Alternatives – Compare Top Fitness & Nutrition Apps",
+    description: "Discover the best MyFitnessPal alternatives for tracking nutrition, fitness, and health. Compare features, pricing, and find the perfect app for your wellness journey.",
+    url: "https://myfitnesspalalternatives.app/",
+    type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://myfitnesspalalternatives.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "The Complete MyFitnessPal Alternatives List"
-      }
+        alt: "MyFitnessPal Alternatives - Compare Top Fitness & Nutrition Apps",
+      },
     ],
-    type: "website",
-    locale: "en_US",
-    siteName: "MyFitnessPal Alternatives"
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Complete MyFitnessPal Alternatives List",
-    description: "Explore the best competitors to MyFitnessPal for your health and fitness tracking. Compare features, pricing, and find the perfect solution for your wellness journey.",
-    images: ["/og-image.jpg"]
-  }
+    title: "Best MyFitnessPal Alternatives – Compare Top Fitness & Nutrition Apps",
+    description: "Discover the best MyFitnessPal alternatives for tracking nutrition, fitness, and health. Compare features, pricing, and find the perfect app for your wellness journey.",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
