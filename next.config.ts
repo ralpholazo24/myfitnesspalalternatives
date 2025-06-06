@@ -11,9 +11,8 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         has: [
           {
-            type: 'header',
-            key: 'x-forwarded-proto',
-            value: 'http',
+            type: 'host',
+            value: 'www.myfitnesspalalternatives.app',
           },
         ],
         permanent: true,
@@ -23,13 +22,14 @@ const nextConfig: NextConfig = {
         source: '/:path*',
         has: [
           {
-            type: 'host',
-            value: 'www.myfitnesspalalternatives.app',
+            type: 'header',
+            key: 'x-forwarded-proto',
+            value: 'http',
           },
         ],
         permanent: true,
         destination: 'https://myfitnesspalalternatives.app/:path*',
-      },
+      }
     ]
   },
 
