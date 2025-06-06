@@ -3,24 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Enable strict mode for better development experience
   reactStrictMode: true,
-  
-  // Configure redirects
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.myfitnesspalalternatives.app',
-          },
-        ],
-        destination: 'https://myfitnesspalalternatives.app/:path*',
-        permanent: true,
-        basePath: false
-      }
-    ]
-  },
 
   // Configure headers for better SEO
   async headers() {
