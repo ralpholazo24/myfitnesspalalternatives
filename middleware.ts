@@ -2,21 +2,14 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
-  const url = request.nextUrl
   const hostname = request.headers.get('host') || ''
   
-  // Check if the request is coming from www subdomain
+  // Only handle www to non-www redirect
   if (hostname.startsWith('www.')) {
-    // Create the new URL without www
-    const newUrl = new URL(url.pathname, `https://myfitnesspalalternatives.app`)
-    return NextResponse.redirect(newUrl, { status: 301 })
-  }
-
-  // Check if the request is not using HTTPS
-  if (url.protocol === 'http:') {
-    // Create the new URL with HTTPS
-    const newUrl = new URL(url.pathname, `https://${hostname}`)
-    return NextResponse.redirect(newUrl, { status: 301 })
+    const newHostname = hostname.replace('www.', '')
+    const url = request.nextUrl.clone()
+    url.host = newHostname
+    return NextResponse.redirect(url, { status: 301 })
   }
 
   return NextResponse.next()

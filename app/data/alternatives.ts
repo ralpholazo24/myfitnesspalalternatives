@@ -221,5 +221,11 @@ export const alternatives: Alternative[] = [
     description: "Excellent for users with complex dietary restrictions like Low FODMAP, gluten-free, multiple allergies, or other specific ingredient avoidance needs. Scans product barcodes and checks ingredients against your profile.",
     website: "https://foodisgood.com",
     icon: "🔍"
+  },
+  {
+    name: "Diet AI",
+    description: "Looking for the best MyFitnessPal alternatives? Check out 22 top apps for tracking calories, macros, and nutrition with ease!",
+    website: "https://www.dietapp.ai",
+    icon: "🍎"
   }
 ]; 
