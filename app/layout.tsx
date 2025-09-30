@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     title: "Best MyFitnessPal Alternatives – Compare Top Fitness & Nutrition Apps",
     description: "Discover the best MyFitnessPal alternatives for tracking nutrition, fitness, and health. Compare features, pricing, and find the perfect app for your wellness journey.",
   },
+  other: {
+    "google-adsense-account": "ca-pub-5076069741687993",
+  },
 };
 
 export default function RootLayout({
